@@ -1,0 +1,38 @@
+.mainStyle {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.claro {
+    background: #fff;
+    color: #000 !important;
+}
+
+.oscuro {
+    background: #1a1919;
+    color: #fff !important;
+}
+
+.tema {
+    position: absolute;
+    font-size: 17px;
+    top: 15px;
+    right: 45px;
+    cursor: pointer;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1270px) {
+    .tema {
+        top: 30px;
+    }
+} 
+
+@media only screen and (max-width: 850px) {
+    .tema {
+        right: 27px;
+        top: 80px;
+    }
+}

@@ -1,0 +1,77 @@
+.contenedor {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50rem;
+}
+
+.titlePelicula {
+    font-size: 4rem;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.marcoVideo {
+    margin: auto;
+}
+
+.detallesPelicula {
+    margin-top: 2.5rem;
+}
+
+.detallesPelicula > p {
+    margin: 3.5px 0;
+    font-size: 17px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 7px;
+    border-radius: 8px;
+    background-color: rgb(16, 75, 164);
+    margin-top: 1.2rem;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 4rem;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1270px) {
+    .titlePelicula {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .contenedor {
+        width: 30rem;
+        height: auto !important;
+    }
+} 
+
+@media only screen and (max-width: 850px) {
+    .titlePelicula {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .contenedor {
+        width: auto;
+        height: 100vh !important;
+    }
+    .marcoVideo > iframe{
+        width: 300px;
+        height: auto;
+    }
+
+    .detallesPelicula {
+        width: 280px;
+        margin: auto;
+    }
+    .detallesPelicula > p {
+        font-size: 11px;
+    }
+} 
